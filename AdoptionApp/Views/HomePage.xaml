@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AdoptionApp.ViewModels"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="AdoptionApp.Views.HomePage"
+             Shell.NavBarIsVisible="False"
+             >
+    <ContentPage.BindingContext>
+        <local:HomeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#EDEDED" Padding="0">
+            <ScrollView>
+                <StackLayout>
+                    
+     
+                <StackLayout Margin="15" Padding="0" >
+                    <Frame BackgroundColor="White" Padding="0" CornerRadius="10" HasShadow="True">
+                        <SearchBar HorizontalOptions="FillAndExpand" Visual="Custom" Placeholder="'Kuala Lumpur'"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Margin="4,0">
+                            <Frame HeightRequest="30" WidthRequest="30" CornerRadius="10" HasShadow="True">
+                                <Image Source="https://image.flaticon.com/icons/png/512/616/616430.png" Aspect="AspectFit" />
+                            </Frame>
+                            <Label Text="Cat" TextColor="DarkGray" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="4,0">
+                            <Frame HeightRequest="30" WidthRequest="30" CornerRadius="10" HasShadow="True">
+                                <Image Source="https://image.flaticon.com/icons/png/512/616/616574.png" Aspect="AspectFit" />
+                            </Frame>
+                            <Label Text="Dog" TextColor="DarkGray" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="4,0">
+                            <Frame HeightRequest="30" WidthRequest="30" CornerRadius="10" HasShadow="True">
+                                <Image Source="https://image.flaticon.com/icons/png/512/523/523442.png" Aspect="AspectFit" />
+                            </Frame>
+                            <Label Text="Rabbit" TextColor="DarkGray" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="4,0">
+                            <Frame HeightRequest="30" WidthRequest="30" CornerRadius="10" HasShadow="True">
+                                <Image Source="https://image.flaticon.com/icons/png/512/616/616475.png" Aspect="AspectFit" />
+                            </Frame>
+                            <Label Text="Hamster" TextColor="DarkGray" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                    
+                    
+                    <!-- List View -->
+                    <StackLayout>
+                        <StackLayout>
+                            <Grid>
+                                <StackLayout Margin="15" BackgroundColor="Transparent" Padding="0">
+
+                                    <Frame BackgroundColor="White" CornerRadius="10" Margin="0" HeightRequest="100" Padding="0">
+                                        <StackLayout HorizontalOptions="FillAndExpand" Margin="125,10,15,5" >
+                                            <StackLayout>
+                                                <Label Text="LabelTitle" Style="{StaticResource LabelTitle}" />
+                                                <Label Text="dasd" Style="{StaticResource Body}" MaxLines="2"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                                                <StackLayout HorizontalOptions="StartAndExpand">
+                                                    <Label Text="Kuala Lumpur" Style="{StaticResource LabelTitle}"/>
+                                                </StackLayout>
+
+                                                <StackLayout HorizontalOptions="End">
+                                                    <Label Text="2y" Style="{StaticResource Body}"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </StackLayout>
+
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <StackLayout Margin="15,3,0,0" BackgroundColor="Transparent" Padding="0" HorizontalOptions="Start">
+
+                                    <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0" WidthRequest="120" HeightRequest="120" Padding="0">
+                                        <ffimageloading:CachedImage Source="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" DownsampleToViewSize="True" Aspect="AspectFill"/>
+                                    </Frame>
+
+                                </StackLayout>
+                            </Grid>
+
+                        </StackLayout>
+                    </StackLayout>
+                    <!-- List View -->
+
+
+
+
+                </StackLayout>
+
+         
+                
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AdoptionApp.App">
+    <Application.Resources>
+        <Style x:Key="LabelTitle" TargetType="Label">
+            <Setter Property="FontFamily">
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="OldSansBlack" />
+                    <On Platform="Android" Value="OldSansBlack.ttf#OldSansBlack" />
+                </OnPlatform>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="Body" TargetType="Label">
+            <Setter Property="FontFamily">
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="OldSansBlack" />
+                    <On Platform="Android" Value="Roboto-Regular.ttf#Roboto-Regular" />
+                </OnPlatform>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>

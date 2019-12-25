@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AdoptionApp.ViewModels"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="AdoptionApp.Views.MyProfilePage"
+             Shell.NavBarIsVisible="False"
+             >
+    <ContentPage.BindingContext>
+        <local:MyProfileViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Frame BackgroundColor="#4B9865" HeightRequest="110" Padding="0">
+                                <ffimageloading:CachedImage Source="https://images.pexels.com/photos/1440406/pexels-photo-1440406.jpeg" DownsampleToViewSize="True" Aspect="AspectFill"/>
+
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="10,70,0,0">
+                            <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0" WidthRequest="80" HeightRequest="80" Padding="0" BorderColor="White">
+                                <ffimageloading:CachedImage Source="https://images.pexels.com/photos/3154302/pexels-photo-3154302.jpeg" DownsampleToViewSize="True" Aspect="AspectFill"/>
+                            </Frame>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout  Margin="10,0">
+                    <Label Text="Mohamad Takqi" Style="{StaticResource LabelTitle}" FontSize="20"/>
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+      
+    </ContentPage.Content>
+</ContentPage>
